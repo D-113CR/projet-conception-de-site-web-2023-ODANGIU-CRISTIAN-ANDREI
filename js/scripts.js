@@ -136,7 +136,7 @@ function save(){
                 fSize += 0.75; // Augmente la taille de la police
                 finalScore.style.top = tPos + "%"; // Utilise le pourcentage pour le positionnement
                 finalScore.style.left = lPos + "%"; // Utilise le pourcentage pour le centrage
-                document.getElementById('score').innerHTML = "Final Score: " + score;
+                document.getElementById('score').innerHTML = "Score Final: " + score;
                 document.getElementById('score').style.fontSize = fSize + "px";
             }
         }
