@@ -71,7 +71,7 @@ const quizData = [{
     correct:"Réquisitionner un pote infographiste"
 },
 {
-    question:"10. Quelle est la marque téléphones la plus connue ?",
+    question:"10. Quelle est la marque de téléphones la plus connue ?",
     opt1:"Apple",
     opt2:"Nokia",
     opt3:"Motorola",
