@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz informatique de Cristian</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="./img/icons8-computer-3d-fluency-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./img/icons8-computer-3d-fluency-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./img/icons8-computer-3d-fluency-96.png">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+
+    <div class="mainContainer" id="mainContainer">
+        <div class="header">
+            <img src="./img/construction.gif" alt="gif page en construction">
+        </div>
+        <h2 class="question" id="question">question bateau</h2>
+        <div class="optionsContainer">
+            <ol>
+                <li class="elements" id="ele1"><input type="radio" id="opt-1" name="option"><label for="opt-1" id="opt1_label">opt-1</label></li>
+                <li class="elements" id="ele2"><input type="radio" id="opt-2" name="option"><label for="opt-2" id="opt2_label">opt-2</label></li>
+                <li class="elements" id="ele3"><input type="radio" id="opt-3" name="option"><label for="opt-3" id="opt3_label">opt-3</label></li>
+                <li class="elements" id="ele4"><input type="radio" id="opt-4" name="option"><label for="opt-4" id="opt4_label">opt-4</label></li>
+            </ol>
+        </div>
+        <button type="submit" class="btn" onclick="save()" id="btn">Soumettre</button>
+    </div>
+    <div class="showScore" id="showScore">
+        <h1 class="score" id="score">Score:0</h1>
+    </div>
+    <script src="./js/scripts.js"></script>
+    <audio autoplay="true" loop="true" src="./mus/music.mp3">
+</body>
+
+</html>

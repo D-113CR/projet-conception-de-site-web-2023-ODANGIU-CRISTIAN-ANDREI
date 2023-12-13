@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/Abstract\ Data.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* min-width: 100vh; */ /* Incorrect, devrait être "vw" pour la largeur de la fenêtre d'affichage */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajout de points d'arrêt réactifs pour une meilleure mise en page sur différentes tailles d'écran */
+@media (max-width: 767px) {
+    body {
+        align-items: flex-start; /* Ajustement de l'alignement pour les petits écrans */
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ajustement l’alignement pour une meilleure réactivité */
+    flex-wrap: wrap; /* Permet aux éléments à s'afficher sur des écrans plus petits */
+    padding: 20px; /* Rajout de padding pour espacer */
+}
+
+.header img {
+    max-width: 50%; /* Rendre l'image réactive */
+    margin-left: 100px;
+    margin-top: -30px;
+    
+}
+
+.mainContainer {
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 90%; /* Utilisation des unités relatives pour une meilleure réactivité */
+    max-width: 550px; /* Limite la largeur maximale pour les grands écrans */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Ajustement l'espacement */
+}
+
+h2 {
+    margin-top: 0; /* Supprime la marge négative pour un meilleur espacement */
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+ol {
+    /* padding-bottom: -5px; */ /* Propriété incorrecte */
+    padding: 0; /* Réinitialisation du padding */
+}
+
+ol li {
+    list-style: lower-alpha;
+    padding: 15px; /* Ajuste le padding pour un meilleur espacement */
+    font-size: 20px;
+}
+
+label {
+    cursor: pointer;
+}
+
+#btn {
+    padding: 10px 40px; /* Ajuste le padding des boutons */
+    margin-bottom: 20px; /* Adjustement de l'espacement */
+    border-radius: 20px;
+    background-color: #044292;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block; /* Autorise la pleine largeur sur les petits écrans */
+    margin: 0 auto; /* Centrage du bouton */
+}
+
+#btn:hover {
+    background-color: rgb(0, 177, 9);
+    color: white;
+}
+
+input {
+    cursor: pointer;
+}
+
+#showScore {
+    /* Ajuste le positionnement pour une meilleure réactivité */
+    position: absolute;
+    bottom: 73%;
+    left: center;
+    font-size: 1.0rem;
+    margin-left: 0%;
+    margin-bottom: -500px;
+   
+}
+
+audio { display:none;}
