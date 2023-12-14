@@ -6,7 +6,7 @@ body {
     background-image: url("../img/Abstract\ Data.jpg");
     background-repeat: no-repeat;
     min-height: 100vh;
-    /* min-width: 100vh; */ /* Incorrect, devrait être "vw" pour la largeur de la fenêtre d'affichage */
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +80,6 @@ h2 {
 }
 
 ol {
-    /* padding-bottom: -5px; */ /* Propriété incorrecte */
     padding: 0; /* Réinitialisation du padding */
 }
 
