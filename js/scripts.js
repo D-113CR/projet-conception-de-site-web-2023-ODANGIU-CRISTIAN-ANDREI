@@ -1,3 +1,6 @@
+/**
+ * Les données du quiz.
+ */
 const quizData = [{
     question:"1.  En quelle année est apparu l'IBM 5150 ?",
     opt1:"1970",
@@ -83,6 +86,10 @@ const quizData = [{
 var questionCounter=0;
 var score=0;
 var qstn=document.getElementById("question");
+
+/**
+ * Affiche les questions.
+ */
 function showQuestions(){
     var opt1_text=document.getElementById("opt1_label");
     var opt2_text=document.getElementById("opt2_label");
@@ -102,6 +109,9 @@ function showQuestions(){
 }
 showQuestions();
 
+/**
+ * Sauvegarde les réponses
+ */
 function save(){
     var options= document.getElementsByName('option');
     for (let i=0;i<4;i++){
